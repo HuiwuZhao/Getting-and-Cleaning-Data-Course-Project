@@ -7,12 +7,13 @@ f<-file.path(getwd(),"dataset.zip")
 download(url,dest=f,mode="wb")
 path_unzip<-file.path(getwd(),"dt")
 unzip(f,exdir=path_unzip)
-#library(purrr)
+
 
 #list unzipped files
 filest<-list.files(path=path_unzip,recursive = TRUE)
 
 #Choose files for analysis
+View(filest)
 files<-filest[c(14,15,16,26,27,28)]
 
 #Read files for analysis
