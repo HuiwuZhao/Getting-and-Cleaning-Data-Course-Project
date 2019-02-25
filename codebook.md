@@ -11,7 +11,7 @@ unzip(f,exdir=path_unzip) ##uzip the files to the folder called "dt"
 
 
 #list unzipped files  
-filest<-list.files(path=path_unzip,recursive = TRUE)  
+filest<-list.files(path=path_unzip,recursive = TRUE) ##filest store the   
 
 #Choose files for analysis  
 files<-filest[c(14,15,16,26,27,28)]  
