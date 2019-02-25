@@ -4,10 +4,10 @@ url<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%2
 
 #Download and unzip the data  
 library(downloader) ##downloader package works for download multiples files  
-f<-file.path(getwd(),"dataset.zip")  
+f<-file.path(getwd(),"dataset.zip") ##create file path to store the downloaded files.  
 download(url,dest=f,mode="wb")  
-path_unzip<-file.path(getwd(),"dt")  
-unzip(f,exdir=path_unzip)  
+path_unzip<-file.path(getwd(),"dt") ##create file path to unzip the downloaded files.  
+unzip(f,exdir=path_unzip) ##uzip the files to the folder called "dt"  
 
 
 #list unzipped files  
