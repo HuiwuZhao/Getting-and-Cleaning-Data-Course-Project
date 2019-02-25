@@ -2,7 +2,7 @@
 The goal is to prepare tidy data from data collected from the accelerometers from the Samsung Galaxy S smartphonethatused for 
 later analysis.
 
-**#Here is what the R script is supposed to do.**
+**#Here is what the R script is supposed to do.**  
 -Merges the training and the test sets to create one data set.
 -Extracts only the measurements on the mean and standard deviation for each measurement.
 -Uses descriptive activity names to name the activities in the data set
