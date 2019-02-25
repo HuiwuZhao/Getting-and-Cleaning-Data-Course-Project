@@ -64,3 +64,6 @@ library(reshape)
 new_dt_m<-melt(dt,id=c("subject","actiname"))  
 #Calcuate the average of each variable for each activity and each subject. Complete the part5 of the project.  
 tidydt<-cast(new_dt_m,subject+actiname~variable,mean)  
+
+**#Write the tidydt as text file**  
+write.table(tidydt,file=file.path(getwd(),"tidydt"),row.name=FALSE)
