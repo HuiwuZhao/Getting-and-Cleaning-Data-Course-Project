@@ -64,5 +64,6 @@ new_dt_m<-melt(dt,id=c("subject","actiname"))
 #Calcuate the average of each variable for each activity and each subject
 tidydt<-cast(new_dt_m,subject+actiname~variable,mean)
 
-
+#Output the tidy data
+write.table(tidydt,file=file.path(getwd(),"tidydt"),row.name=FALSE)
 
